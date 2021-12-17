@@ -42,50 +42,110 @@ let bg5div = document.getElementById("bg5");
 
 // console.log(facediv);
 facediv.onclick = function () {
+  if (!isFace) {
+    facediv.style.backgroundColor = "yellow";
+  } else {
+    facediv.style.backgroundColor = "black";
+  }
   isFace = !isFace;
   myp5.detectface();
 };
 headdiv.onclick = function () {
+  if (!isChristmas) {
+    headdiv.style.backgroundColor = "yellow";
+  } else {
+    headdiv.style.backgroundColor = "black";
+  }
   isChristmas = !isChristmas;
   myp5.detectChristmas();
 };
 bearddiv.onclick = function () {
+  if (!isBeard) {
+    bearddiv.style.backgroundColor = "yellow";
+  } else {
+    bearddiv.style.backgroundColor = "black";
+  }
   isBeard = !isBeard;
   myp5.detectBeard();
 };
 nosediv.onclick = function () {
+  if (!isNose) {
+    nosediv.style.backgroundColor = "yellow";
+  } else {
+    nosediv.style.backgroundColor = "black";
+  }
   isNose = !isNose;
   myp5.detectNose();
 };
 eyediv.onclick = function () {
+  if (!isEye) {
+    eyediv.style.backgroundColor = "yellow";
+  } else {
+    eyediv.style.backgroundColor = "black";
+  }
   isEye = !isEye;
   myp5.detectEyes();
 };
 necklessdiv.onclick = function () {
+  if (!isNeck) {
+    necklessdiv.style.backgroundColor = "yellow";
+  } else {
+    necklessdiv.style.backgroundColor = "black";
+  }
   isNeck = !isNeck;
   myp5.detectNeck();
 };
 lipsdiv.onclick = function () {
+  if (!isLips) {
+    lipsdiv.style.backgroundColor = "yellow";
+  } else {
+    lipsdiv.style.backgroundColor = "black";
+  }
   isLips = !isLips;
   myp5.detectLips();
 };
 bg1div.onclick = function () {
+  if (!isBg1) {
+    bg1div.style.backgroundColor = "yellow";
+  } else {
+    bg1div.style.backgroundColor = "black";
+  }
   isBg1 = !isBg1;
   myp5.detectBg1();
 };
 bg2div.onclick = function () {
+  if (!isBg2) {
+    bg2div.style.backgroundColor = "yellow";
+  } else {
+    bg2div.style.backgroundColor = "black";
+  }
   isBg2 = !isBg2;
   myp5.detectBg2();
 };
 bg3div.onclick = function () {
+  if (!isBg3) {
+    bg3div.style.backgroundColor = "yellow";
+  } else {
+    bg3div.style.backgroundColor = "black";
+  }
   isBg3 = !isBg3;
   myp5.detectBg3();
 };
 bg4div.onclick = function () {
+  if (!isBg4) {
+    bg4div.style.backgroundColor = "yellow";
+  } else {
+    bg4div.style.backgroundColor = "black";
+  }
   isBg4 = !isBg4;
   myp5.detectBg4();
 };
 bg5div.onclick = function () {
+  if (!isBg5) {
+    bg5div.style.backgroundColor = "yellow";
+  } else {
+    bg5div.style.backgroundColor = "black";
+  }
   isBg5 = !isBg5;
   myp5.detectBg5();
 };
@@ -115,6 +175,7 @@ let sketch = function (p) {
 
   p.draw = function () {
     p.clear();
+
     // face mash detection
     if (detections != undefined && isShows) {
       if (
@@ -362,7 +423,7 @@ let sketch = function (p) {
       }
     }
     // p.endShape();
-    p.image(beard, x - 75, y - 55);
+    p.image(beard, x - 75, y - 50);
     beard.resize(200, 200);
   };
 

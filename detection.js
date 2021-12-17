@@ -11,6 +11,7 @@ const faceMesh = new FaceMesh({
     return `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/${file}`;
   },
 });
+
 faceMesh.setOptions({
   maxNumFaces: 1,
   refineLandmarks: true,
@@ -45,4 +46,11 @@ if (isMobileDevice) {
   window.location = "https://christmasfilter.netlify.app/";
 } else {
   console.log("You are using Desktop then its okey");
+}
+
+function click() {
+  alert("this is working");
+  // html2canvas(document.querySelector("body")).then((canvas) => {
+  //   document.body.appendChild(canvas);
+  // });
 }
