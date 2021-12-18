@@ -176,6 +176,13 @@ let sketch = function (p) {
   p.draw = function () {
     p.clear();
 
+    if (detections == undefined) {
+      alert("please wait");
+    } else {
+      headdiv.disabled = true;
+      nosediv.disabled = true;
+    }
+
     // face mash detection
     if (detections != undefined && isShows) {
       if (

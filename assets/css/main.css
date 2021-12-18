@@ -249,3 +249,20 @@ body {
   font-family: "Raleway", sans-serif;
   color: #000;
 }
+
+#page {
+  display: none;
+}
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  background-image: url("https://media4.giphy.com/media/Qc8UoA7NJqx70SfiCL/giphy.gif?cid=ecf05e47a28j1xzy8zz7t51hxqhdi50gmmi6xxfe7ckpb8zi&rid=giphy.gif&ct=g");
+  background-repeat: no-repeat;
+  background-position: center;
+}

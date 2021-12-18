@@ -48,9 +48,22 @@ if (isMobileDevice) {
   console.log("You are using Desktop then its okey");
 }
 
-function click() {
-  alert("this is working");
-  // html2canvas(document.querySelector("body")).then((canvas) => {
-  //   document.body.appendChild(canvas);
-  // });
+function onReady(callback) {
+  var intervalID = window.setInterval(checkReady, 5000);
+
+  function checkReady() {
+    if (document.getElementsByTagName("body")[0] !== undefined) {
+      window.clearInterval(intervalID);
+      callback.call(this);
+    }
+  }
 }
+
+function show(id, value) {
+  document.getElementById(id).style.display = value ? "block" : "none";
+}
+
+onReady(function () {
+  show("page", true);
+  show("loading", false);
+});

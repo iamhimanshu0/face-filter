@@ -4,8 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
 
-    <script src="html2canvas.min.js"></script>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -43,153 +47,158 @@
     ></script>
   </head>
   <body>
-    <!-- https://codepen.io/codeconvey/pen/xRzQay -->
-    <div class="snowflakes" aria-hidden="true">
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❄</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❄</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❄</div>
+    <div id="loading"></div>
+
+    <div id="page">
+      <!-- https://codepen.io/codeconvey/pen/xRzQay -->
+      <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+      </div>
+      <!-- https://codepen.io/codeconvey/pen/xRzQay -->
+
+      <!-- phone  -->
+      <div class="smartphone">
+        <div class="content">
+          <video id="video" width="280px" height="480px"></video>
+        </div>
+      </div>
+
+      <!-- scrolling effect -->
+      <div class="scroll">
+        <div id="bg1" class="filter">
+          <center>
+            <img class="avatar" src="assets/background1.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- --><!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <div id="head" class="filter">
+          <center>
+            <img class="avatar" src="assets/headchristams.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- -->
+        <div id="bg3" class="filter">
+          <center>
+            <img class="avatar" src="assets/background3.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- --><!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <div id="beard" class="filter">
+          <center>
+            <img class="avatar" src="assets/beard.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- -->
+        <div id="bg4" class="filter">
+          <center>
+            <img class="avatar" src="assets/background4.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- --><!-- ----------------------------------- -->
+        <div id="bg5" class="filter">
+          <center>
+            <img class="avatar" src="assets/background5.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <div id="face" class="filter">
+          <center>
+            <img class="avatar" src="assets/full-mask-1.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- -->
+
+        <!-- ----------------------------------- -->
+        <div id="bg2" class="filter">
+          <center>
+            <img class="avatar" src="assets/background2.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- --><!-- ----------------------------------- -->
+
+        <!-- ----------------------------------- -->
+        <div id="nose" class="filter">
+          <center>
+            <img class="avatar" src="assets/nose.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <div id="eye" class="filter">
+          <center>
+            <img class="avatar" src="assets/eye.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <div id="neck" class="filter">
+          <center>
+            <img class="avatar" src="assets/neck.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <div id="lips" class="filter">
+          <center>
+            <img class="avatar" src="assets/lips.png" />
+          </center>
+        </div>
+        <!-- ----------------------------------- -->
+      </div>
+      <div style="margin-left: 20px; margin-top: 75px">
+        <div class="text-center center-block">
+          <a
+            style="color: rgb(0, 0, 0)"
+            href="https://www.linkedin.com/in/iamhimanshu0/"
+            ><i id="social-gp" class="fa fa-github-square fa-3x social"></i
+          ></a>
+          <a
+            style="color: rgb(0, 0, 0)"
+            href="https://www.linkedin.com/in/iamhimanshu0/"
+            ><i id="social-gp" class="fa fa-linkedin-square fa-3x social"></i
+          ></a>
+          <a
+            style="color: rgb(0, 0, 0)"
+            href="https://www.instagram.com/iamhimanshu0/"
+            ><i id="social-tw" class="fa fa-instagram fa-3x social"></i
+          ></a>
+          <a style="color: #000000" href="https://www.facebook.com/iamhimanshu0"
+            ><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i
+          ></a>
+          <a
+            style="color: rgb(0, 0, 0)"
+            href="https://twitter.com/iam_himanshu0"
+            ><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i
+          ></a>
+
+          <a
+            style="color: rgb(0, 0, 0)"
+            href="mailto:iamhimanshutripathi0@gmail.com"
+            ><i id="social-em" class="fa fa-envelope-square fa-3x social"></i
+          ></a>
+
+          <p style="color: rgb(0, 0, 0)">
+            <b> &nbsp;&nbsp;&nbsp;&nbsp; © 2021-2022, Himanshu Tripathi.</b>
+          </p>
+        </div>
+      </div>
+
+      <a href="index.html" class="float">
+        <i class="fa fa-plus my-float"></i>
+      </a>
     </div>
-    <!-- https://codepen.io/codeconvey/pen/xRzQay -->
-
-    <!-- phone  -->
-    <div class="smartphone">
-      <div class="content">
-        <video id="video" width="280px" height="480px"></video>
-      </div>
-    </div>
-
-    <!-- scrolling effect -->
-    <div class="scroll">
-      <div id="bg1" class="filter">
-        <center>
-          <img class="avatar" src="assets/background1.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- --><!-- ----------------------------------- -->
-      <!-- ----------------------------------- -->
-      <div id="head" class="filter">
-        <center>
-          <img class="avatar" src="assets/headchristams.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- -->
-      <div id="bg3" class="filter">
-        <center>
-          <img class="avatar" src="assets/background3.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- --><!-- ----------------------------------- -->
-      <!-- ----------------------------------- -->
-      <div id="beard" class="filter">
-        <center>
-          <img class="avatar" src="assets/beard.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- -->
-      <div id="bg4" class="filter">
-        <center>
-          <img class="avatar" src="assets/background4.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- --><!-- ----------------------------------- -->
-      <div id="bg5" class="filter">
-        <center>
-          <img class="avatar" src="assets/background5.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- -->
-      <!-- ----------------------------------- -->
-      <div id="face" class="filter">
-        <center>
-          <img class="avatar" src="assets/full-mask-1.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- -->
-
-      <!-- ----------------------------------- -->
-      <div id="bg2" class="filter">
-        <center>
-          <img class="avatar" src="assets/background2.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- --><!-- ----------------------------------- -->
-
-      <!-- ----------------------------------- -->
-      <div id="nose" class="filter">
-        <center>
-          <img class="avatar" src="assets/nose.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- -->
-      <!-- ----------------------------------- -->
-      <div id="eye" class="filter">
-        <center>
-          <img class="avatar" src="assets/eye.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- -->
-      <!-- ----------------------------------- -->
-      <div id="neck" class="filter">
-        <center>
-          <img class="avatar" src="assets/neck.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- -->
-      <!-- ----------------------------------- -->
-      <div id="lips" class="filter">
-        <center>
-          <img class="avatar" src="assets/lips.png" />
-        </center>
-      </div>
-      <!-- ----------------------------------- -->
-    </div>
-    <div style="margin-left: 20px; margin-top: 75px">
-      <div class="text-center center-block">
-        <a
-          style="color: rgb(0, 0, 0)"
-          href="https://www.linkedin.com/in/iamhimanshu0/"
-          ><i id="social-gp" class="fa fa-github-square fa-3x social"></i
-        ></a>
-        <a
-          style="color: rgb(0, 0, 0)"
-          href="https://www.linkedin.com/in/iamhimanshu0/"
-          ><i id="social-gp" class="fa fa-linkedin-square fa-3x social"></i
-        ></a>
-        <a
-          style="color: rgb(0, 0, 0)"
-          href="https://www.instagram.com/iamhimanshu0/"
-          ><i id="social-tw" class="fa fa-instagram fa-3x social"></i
-        ></a>
-        <a style="color: #000000" href="https://www.facebook.com/iamhimanshu0"
-          ><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i
-        ></a>
-        <a style="color: rgb(0, 0, 0)" href="https://twitter.com/iam_himanshu0"
-          ><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i
-        ></a>
-
-        <a
-          style="color: rgb(0, 0, 0)"
-          href="mailto:iamhimanshutripathi0@gmail.com"
-          ><i id="social-em" class="fa fa-envelope-square fa-3x social"></i
-        ></a>
-
-        <p style="color: rgb(0, 0, 0)">
-          <b> &nbsp;&nbsp;&nbsp;&nbsp; © 2021-2022, Himanshu Tripathi.</b>
-        </p>
-      </div>
-    </div>
-
-    <a href="index.html" class="float">
-      <i class="fa fa-plus my-float"></i>
-    </a>
-
     <!-- music -->
     <embed src="assets/music.mp3" loop="true" autostart="true" hidden="true" />
   </body>
