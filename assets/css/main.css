@@ -54,6 +54,7 @@ body {
 }
 
 #video {
+  object-fit: cover;
   position: absolute;
   top: 0.1px;
   /* margin: 16px; */

@@ -68,7 +68,7 @@
       <!-- phone  -->
       <div class="smartphone">
         <div class="content">
-          <video id="video" width="280px" height="480px"></video>
+          <video id="video"></video>
         </div>
       </div>
 
@@ -200,7 +200,10 @@
       </a>
     </div>
     <!-- music -->
-    <embed src="assets/music.mp3" loop="true" autostart="true" hidden="true" />
+
+    <audio controls loop autoplay>
+      <source src="assets/music.mp3" type="audio/ogg" />
+    </audio>
   </body>
 </html>
 
